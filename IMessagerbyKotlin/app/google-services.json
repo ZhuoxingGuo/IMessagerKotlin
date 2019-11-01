@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "429327787639",
+    "firebase_url": "https://imessagerbykotlin.firebaseio.com",
+    "project_id": "imessagerbykotlin",
+    "storage_bucket": "imessagerbykotlin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:429327787639:android:25c415692ae1969f1d0872",
+        "android_client_info": {
+          "package_name": "com.example.imessagerbykotlin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "429327787639-t27tn8859e1g1h88dblkj00n1e4fcu1m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGJKbPBOD70QGskVMhLQcPP6PPwVL5kcM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "429327787639-t27tn8859e1g1h88dblkj00n1e4fcu1m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

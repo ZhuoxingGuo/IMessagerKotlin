@@ -5,46 +5,58 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity" android:background="@android:color/holo_green_dark" android:id="@+id/info">
+        tools:context=".registerActivity" android:background="@android:color/holo_green_light" android:id="@+id/info">
+
+
+    <Button
+            android:text="SELECT PHOTO"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/select_img_btn" android:layout_marginTop="16dp"
+            android:background="@drawable/background_shape_btn_img"
+            android:textColor="@android:color/white"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"/>
     <EditText
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:inputType="textPersonName"
-            android:text="Password"
             android:ems="10"
             android:id="@+id/password_input"
             app:layout_constraintStart_toStartOf="@+id/gmail_input2"
             app:layout_constraintEnd_toEndOf="@+id/gmail_input2"
             android:layout_marginTop="8dp"
-            android:background="@android:color/white"
+            android:background="@drawable/background_shape"
             android:textSize="24sp" android:paddingLeft="24dp" app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintTop_toBottomOf="@+id/gmail_input2"
-    />
+            android:hint="password"/>
     <EditText
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:inputType="textPersonName"
-            android:text="Gmail"
             android:ems="10"
             android:id="@+id/gmail_input2"
             app:layout_constraintStart_toStartOf="@+id/id_input"
             app:layout_constraintEnd_toEndOf="@+id/id_input"
             android:layout_marginTop="8dp"
-            android:background="@android:color/white"
-            android:textSize="24sp" android:paddingLeft="24dp" app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintTop_toBottomOf="@+id/id_input"/>
+            android:background="@drawable/background_shape"
+            android:textSize="24sp" android:paddingLeft="24dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintTop_toBottomOf="@+id/id_input"
+            android:hint="gmail"/>
     <EditText
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:inputType="textPersonName"
-            android:text="UserName"
             android:ems="10"
             android:id="@+id/id_input" android:layout_marginStart="32dp"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="32dp"
             android:layout_marginEnd="32dp"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="32dp" android:layout_marginTop="32dp"
-            app:layout_constraintTop_toTopOf="parent" android:background="@android:color/white"
-            android:textSize="24sp" android:paddingLeft="24dp"/>
+            android:background="@drawable/background_shape"
+            android:textSize="24sp" android:paddingLeft="24dp" android:hint="username"
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintTop_toBottomOf="@+id/select_img_btn"/>
     <Button
             android:text="Regitster"
             android:layout_width="0dp"
@@ -52,13 +64,16 @@
             android:id="@+id/register_btn" app:layout_constraintStart_toStartOf="@+id/password_input"
             app:layout_constraintEnd_toEndOf="@+id/password_input"
             android:layout_marginTop="8dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/background_shape_btn"
             app:layout_constraintTop_toBottomOf="@+id/password_input"/>
     <TextView
-            android:text="already have account"
-            android:layout_width="230dp"
+            android:text="already have account?"
+            android:layout_width="wrap_content"
             android:layout_height="38dp"
             android:id="@+id/login_btn" app:layout_constraintStart_toStartOf="@+id/register_btn"
             app:layout_constraintEnd_toEndOf="@+id/register_btn"
             app:layout_constraintTop_toBottomOf="@+id/register_btn" android:textSize="24sp"
             android:layout_marginTop="16dp" android:textColor="@android:color/white"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
